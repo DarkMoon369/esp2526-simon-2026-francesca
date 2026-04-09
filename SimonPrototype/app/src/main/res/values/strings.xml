@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">SimonPrototype</string>
+    <string name="simon_game">Simon Game</string>
+    <string name="start">Start</string>
+    <string name="blue">B</string>
+    <string name="green">G</string>
+    <string name="red">R</string>
+    <string name="yellow">Y</string>
+    <string name="cyan">C</string>
+    <string name="magenta">M</string>
+    <string name="Clear">Cancella</string>
+    <string name="fine_partita">Fine partita</string>
 </resources>
