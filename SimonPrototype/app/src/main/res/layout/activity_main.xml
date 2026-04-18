@@ -133,6 +133,8 @@
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:paddingVertical="12dp"
+            android:textSize="18sp"
             android:layout_weight="1"
             android:text="@string/Clear"
             tools:ignore="VisualLintButtonSize">
@@ -144,6 +146,8 @@
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:paddingVertical="12dp"
+            android:textSize="18sp"
             android:layout_weight="1"
             android:text="@string/fine_partita"
             tools:ignore="VisualLintButtonSize">

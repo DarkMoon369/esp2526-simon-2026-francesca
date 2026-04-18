@@ -8,12 +8,18 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import android.content.Intent
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var  sequenceText: TextView
     private val sequence = StringBuilder() // contiene la seuqenza corrente
-    private val allSequence = mutableListOf<String>() // contiene tutte le sequenze completate
+    companion object {
+        val resultsList = ArrayList<GameResult>()
+    }
+
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -55,6 +61,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
     private fun addToSequence(letter:String){
+        if (sequence.isNotEmpty()) sequence.append(",")
         sequence.append(letter)
         sequenceText.text = sequence.toString()
     }
@@ -65,9 +72,18 @@ class MainActivity : AppCompatActivity() {
             sequenceText.text = ""
         }
         findViewById<Button>(R.id.btnEnd).setOnClickListener {
-            allSequence.add(sequence.toString())
+            //salvo la sequenza corrente
+            val result = GameResult(sequence.toString())
+            resultsList.add(result)
+
+            //pulisco la sequenza per la prossima partita
             sequence.clear()
             sequenceText.text = ""
+
+            //apro la schermata 2
+            val intent = Intent(this, ResultsActivity::class.java)
+            intent.putExtra("results", MainActivity.resultsList)
+            startActivity(intent)
         }
     }
 
