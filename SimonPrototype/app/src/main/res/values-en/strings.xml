@@ -1,14 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">SimonPrototype</string>
-    <string name="simon_game">Gioco di Simon</string>
-    <string name="start">Inizia</string>
+    <string name="simon_game">Simon Game</string>
+    <string name="start">Start</string>
     <string name="blue">B</string>
     <string name="green">G</string>
     <string name="red">R</string>
     <string name="yellow">Y</string>
     <string name="cyan">C</string>
     <string name="magenta">M</string>
-    <string name="Clear">Cancella</string>
-    <string name="fine_partita">Fine partita</string>
-    <string name="storico_partite">Storico partite</string>
+    <string name="Clear">Clear</string>
+    <string name="fine_partita">End game </string>
+    <string name="storico_partite">Match history</string>
 </resources>
