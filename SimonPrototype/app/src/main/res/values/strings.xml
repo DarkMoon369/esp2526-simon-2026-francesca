@@ -11,4 +11,5 @@
     <string name="Clear">Cancella</string>
     <string name="fine_partita">Fine partita</string>
     <string name="storico_partite">Storico partite</string>
+    <string name="avvia_gioco">Avvia gioco</string>
 </resources>

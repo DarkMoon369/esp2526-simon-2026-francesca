@@ -24,5 +24,14 @@ class ResultsActivity : AppCompatActivity() {
         //imposto layout manager
         recycler.layoutManager = LinearLayoutManager(this)
         recycler.adapter = ResultsAdapter(results)
+
+        //pulsante di avvio del gioco
+        val btnStart = findViewById<Button>(R.id.btnStartGame)
+
+        btnStart.setOnClickListener {
+            val intent = Intent(this, GameActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 }
