@@ -12,4 +12,8 @@
     <string name="fine_partita">Fine partita</string>
     <string name="storico_partite">Storico partite</string>
     <string name="avvia_gioco">Avvia gioco</string>
+    <string name="log_partita">Log partita...</string>
+    <string name="avvia">Avvia</string>
+    <string name="pausa">Pausa</string>
+    <string name="fine">Fine</string>
 </resources>

@@ -6,6 +6,8 @@ import androidx.recyclerview.widget.RecyclerView
 import java.util.ArrayList
 import kotlin.collections.arrayListOf
 import androidx.recyclerview.widget.LinearLayoutManager
+import android.widget.Button
+import android.content.Intent
 
 
 class ResultsActivity : AppCompatActivity() {
