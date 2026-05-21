@@ -22,37 +22,38 @@
             android:id="@+id/btn1"
             android:layout_width="120dp"
             android:layout_height="120dp"
-            android:background="#FF0000" />
+            android:backgroundTint="@color/red" /> <!-- rosso -->
 
         <Button
             android:id="@+id/btn2"
             android:layout_width="120dp"
             android:layout_height="120dp"
-            android:background="#00FF00" />
+            android:backgroundTint="@color/green" /> <!-- verde -->
 
         <Button
             android:id="@+id/btn3"
             android:layout_width="120dp"
             android:layout_height="120dp"
-            android:background="#0000FF" />
+            android:backgroundTint="@color/blue" /> <!-- blu -->
 
         <Button
             android:id="@+id/btn4"
             android:layout_width="120dp"
             android:layout_height="120dp"
-            android:background="#FFFF00" />
+            android:backgroundTint="@color/yellow" /> <!-- giallo -->
 
         <Button
             android:id="@+id/btn5"
             android:layout_width="120dp"
             android:layout_height="120dp"
-            android:background="#FF00FF" />
+            android:backgroundTint="@color/magenta" /> <!-- magenta -->
 
         <Button
             android:id="@+id/btn6"
             android:layout_width="120dp"
             android:layout_height="120dp"
-            android:background="#00FFFF" />
+            android:backgroundTint="@color/cyan" /> <!-- ciano -->
+
 
     </GridLayout>
 
