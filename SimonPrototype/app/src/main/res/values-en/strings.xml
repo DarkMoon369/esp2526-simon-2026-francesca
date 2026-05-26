@@ -12,4 +12,16 @@
     <string name="Clear">Clear</string>
     <string name="fine_partita">End game </string>
     <string name="storico_partite">Match history</string>
+    <string name="avvia_gioco">Start game</string>
+    <string name="log_partita">Game log...</string>
+    <string name="avvia">Start</string>
+    <string name="pausa">Pause</string>
+    <string name="fine">End</string>
+    <string name="riprendi">Resume</string>
+    <string name="desc_red">Red button</string>
+    <string name="desc_green">Green button</string>
+    <string name="desc_blue">Blue button</string>
+    <string name="desc_yellow">Yellow button</string>
+    <string name="desc_magenta">Magenta button</string>
+    <string name="desc_cyan">Cyan button</string>
 </resources>

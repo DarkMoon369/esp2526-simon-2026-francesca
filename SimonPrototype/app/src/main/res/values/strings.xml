@@ -16,4 +16,12 @@
     <string name="avvia">Avvia</string>
     <string name="pausa">Pausa</string>
     <string name="fine">Fine</string>
+    <string name="riprendi">Riprendi</string>
+    <string name="desc_red">Pulsante rosso</string>
+    <string name="desc_green">Pulsante verde</string>
+    <string name="desc_blue">Pulsante blu</string>
+    <string name="desc_yellow">Pulsante giallo</string>
+    <string name="desc_magenta">Pulsante magenta</string>
+    <string name="desc_cyan">Pulsante ciano</string>
+
 </resources>

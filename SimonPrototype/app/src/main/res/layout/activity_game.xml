@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootGame"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -22,37 +23,43 @@
             android:id="@+id/btn1"
             android:layout_width="120dp"
             android:layout_height="120dp"
-            android:backgroundTint="@color/red" /> <!-- rosso -->
+            android:backgroundTint="@color/red"
+            android:contentDescription="@string/desc_red" /> <!-- rosso -->
 
         <Button
             android:id="@+id/btn2"
             android:layout_width="120dp"
             android:layout_height="120dp"
-            android:backgroundTint="@color/green" /> <!-- verde -->
+            android:backgroundTint="@color/green"
+            android:contentDescription="@string/desc_green" /> <!-- verde -->
 
         <Button
             android:id="@+id/btn3"
             android:layout_width="120dp"
             android:layout_height="120dp"
-            android:backgroundTint="@color/blue" /> <!-- blu -->
+            android:backgroundTint="@color/blue"
+            android:contentDescription="@string/desc_blue" /> <!-- blu -->
 
         <Button
             android:id="@+id/btn4"
             android:layout_width="120dp"
             android:layout_height="120dp"
-            android:backgroundTint="@color/yellow" /> <!-- giallo -->
+            android:backgroundTint="@color/yellow"
+            android:contentDescription="@string/desc_yellow" /> <!-- giallo -->
 
         <Button
             android:id="@+id/btn5"
             android:layout_width="120dp"
             android:layout_height="120dp"
-            android:backgroundTint="@color/magenta" /> <!-- magenta -->
+            android:backgroundTint="@color/magenta"
+            android:contentDescription="@string/desc_magenta" /> <!-- magenta -->
 
         <Button
             android:id="@+id/btn6"
             android:layout_width="120dp"
             android:layout_height="120dp"
-            android:backgroundTint="@color/cyan" /> <!-- ciano -->
+            android:backgroundTint="@color/cyan"
+            android:contentDescription="@string/desc_cyan" /> <!-- ciano -->
 
 
     </GridLayout>
@@ -74,12 +81,14 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <!-- pulsanti -->
-    <LinearLayout
-        android:id="@+id/controls"
+    <GridLayout
+        android:id="@+id/controlsGrid"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center"
+        android:columnCount="2"
+        android:rowCount="2"
+        android:alignmentMode="alignMargins"
+        android:useDefaultMargins="true"
         android:padding="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -87,24 +96,37 @@
 
         <Button
             android:id="@+id/btnStart"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="@string/avvia" />
+            android:layout_columnWeight="1"
+            android:text="@string/avvia"
+            android:minHeight="48dp" />
 
         <Button
             android:id="@+id/btnPause"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
             android:text="@string/pausa"
-            android:layout_marginStart="16dp" />
+            android:minHeight="48dp" />
+
+        <Button
+            android:id="@+id/btnResume"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="@string/riprendi"
+            android:enabled="false"
+            android:minHeight="48dp" />
 
         <Button
             android:id="@+id/btnEnd"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
             android:text="@string/fine"
-            android:layout_marginStart="16dp" />
+            android:minHeight="48dp" />
 
-    </LinearLayout>
+    </GridLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
