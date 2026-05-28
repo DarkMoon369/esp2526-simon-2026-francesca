@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SimonPrototype</string>
+    <string name="simon_game">Gioco di Simon</string>
+    <string name="start">Inizia</string>
+
+    <string name="blue">B</string>
+    <string name="green">G</string>
+    <string name="red">R</string>
+    <string name="yellow">Y</string>
+    <string name="cyan">C</string>
+    <string name="magenta">M</string>
+
+    <string name="Clear">Cancella</string>
+    <string name="fine_partita">Fine partita</string>
+    <string name="storico_partite">Storico partite</string>
+    <string name="avvia_gioco">Avvia gioco</string>
+
+    <!-- Messaggi di log / UI dinamici usati nel codice -->
+    <string name="log_partita">Log partita...</string>
+    <string name="computer_turn">Turno del computer: %1$d elementi</string>
+    <string name="player_turn">Tocca a te! Ripeti %1$d pulsanti</string>
+    <string name="paused">Gioco in pausa</string>
+    <string name="resumed">Ripreso</string>
+    <string name="well_done">Ben fatto! Nuovo turno...</string>
+    <string name="error_end">Errore! Partita terminata.</string>
+    <string name="score_text">Punteggio: %1$d</string>
+
+    <string name="avvia">Avvia</string>
+    <string name="pausa">Pausa</string>
+    <string name="fine">Fine</string>
+    <string name="riprendi">Riprendi</string>
+
+    <string name="desc_red">Pulsante rosso</string>
+    <string name="desc_green">Pulsante verde</string>
+    <string name="desc_blue">Pulsante blu</string>
+    <string name="desc_yellow">Pulsante giallo</string>
+    <string name="desc_magenta">Pulsante magenta</string>
+    <string name="desc_cyan">Pulsante ciano</string>
+    <string name="sequenza_vuota">Nessuna sequenza ancora</string>
+
+    <string name="game_not_found">Partita non trovata</string>
+
+    <string name="fab_description">Avvia nuova partita</string>
+</resources>

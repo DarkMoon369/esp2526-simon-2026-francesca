@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SimonPrototype</string>
+    <string name="simon_game">Simon Game</string>
+    <string name="start">Start</string>
+
+    <string name="blue">B</string>
+    <string name="green">G</string>
+    <string name="red">R</string>
+    <string name="yellow">Y</string>
+    <string name="cyan">C</string>
+    <string name="magenta">M</string>
+
+    <string name="Clear">Clear</string>
+    <string name="fine_partita">End game </string>
+    <string name="storico_partite">Match history</string>
+    <string name="avvia_gioco">Start game</string>
+
+    <string name="log_partita">Game log...</string>
+    <string name="avvia">Start</string>
+    <string name="pausa">Pause</string>
+    <string name="fine">End</string>
+    <string name="riprendi">Resume</string>
+    <string name="computer_turn">Computer turn: %1$d items</string>
+    <string name="player_turn">Your turn! Repeat %1$d buttons</string>
+    <string name="paused">Game paused</string>
+    <string name="resumed">Resumed</string>
+    <string name="well_done">Well done! New turn...</string>
+    <string name="error_end">Error! Game over.</string>
+    <string name="score_text">Score: %1$d</string>
+
+    <string name="desc_red">Red button</string>
+    <string name="desc_green">Green button</string>
+    <string name="desc_blue">Blue button</string>
+    <string name="desc_yellow">Yellow button</string>
+    <string name="desc_magenta">Magenta button</string>
+    <string name="desc_cyan">Cyan button</string>
+    <string name="sequenza_vuota">No sequence yet</string>
+
+    <string name="game_not_found">Game not found</string>
+
+    <string name="fab_description">Start new game</string>
+</resources>

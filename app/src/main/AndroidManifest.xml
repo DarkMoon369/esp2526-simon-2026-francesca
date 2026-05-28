@@ -13,19 +13,20 @@
         android:theme="@style/Theme.SimonPrototype"
         tools:ignore="ExtraText">
 
-        <activity android:name=".ResultsActivity"
-            android:exported="true">
+        <!-- Nuova MainActivity (lista partite) come launcher -->
+        <activity android:name=".MainActivity" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
-        </activity>
+
+        <!-- GameActivity (gioco per la consegna 2) -->
         <activity android:name=".GameActivity" />
+
+        <!-- MatchDetailActivity per dettaglio partita -->
+        <activity android:name=".MatchDetailActivity" />
+
     </application>
 
 </manifest>
