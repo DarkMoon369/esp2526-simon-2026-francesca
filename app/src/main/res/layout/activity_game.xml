@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <!-- griglia 3x2 -->
+    <!-- Griglia 3x2 con bottoni 120x120dp -->
     <GridLayout
         android:id="@+id/gridColors"
         android:layout_width="wrap_content"
@@ -15,90 +15,88 @@
         android:alignmentMode="alignMargins"
         android:useDefaultMargins="true"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/txtLog"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp">
 
         <Button
             android:id="@+id/btn1"
             android:layout_width="120dp"
             android:layout_height="120dp"
             android:backgroundTint="@color/red"
-            android:contentDescription="@string/desc_red" /> <!-- rosso -->
-
+            android:contentDescription="@string/desc_red" />
         <Button
             android:id="@+id/btn2"
             android:layout_width="120dp"
             android:layout_height="120dp"
             android:backgroundTint="@color/green"
-            android:contentDescription="@string/desc_green" /> <!-- verde -->
-
+            android:contentDescription="@string/desc_green" />
         <Button
             android:id="@+id/btn3"
             android:layout_width="120dp"
             android:layout_height="120dp"
             android:backgroundTint="@color/blue"
-            android:contentDescription="@string/desc_blue" /> <!-- blu -->
-
+            android:contentDescription="@string/desc_blue" />
         <Button
             android:id="@+id/btn4"
             android:layout_width="120dp"
             android:layout_height="120dp"
             android:backgroundTint="@color/yellow"
-            android:contentDescription="@string/desc_yellow" /> <!-- giallo -->
-
+            android:contentDescription="@string/desc_yellow" />
         <Button
             android:id="@+id/btn5"
             android:layout_width="120dp"
             android:layout_height="120dp"
             android:backgroundTint="@color/magenta"
-            android:contentDescription="@string/desc_magenta" /> <!-- magenta -->
-
+            android:contentDescription="@string/desc_magenta" />
         <Button
             android:id="@+id/btn6"
             android:layout_width="120dp"
             android:layout_height="120dp"
             android:backgroundTint="@color/cyan"
-            android:contentDescription="@string/desc_cyan" /> <!-- ciano -->
-
-
+            android:contentDescription="@string/desc_cyan" />
     </GridLayout>
 
-    <!-- Area testo per la sequenza premuta dal giocatore -->
+    <!-- Area sequenza premuta -->
     <TextView
         android:id="@+id/txtPlayerSequence"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:minHeight="80dp"
-        android:padding="12dp"
+        android:minHeight="60dp"
+        android:padding="8dp"
         android:background="#F0F0F0"
         android:textColor="#000000"
         android:textSize="16sp"
         android:gravity="center_horizontal|center_vertical"
-        android:textIsSelectable="false"
-        android:inputType="none"
         android:text="@string/sequenza_vuota"
         app:layout_constraintTop_toBottomOf="@id/gridColors"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"/>
 
-    <!-- Testo multiriga -->
+    <!-- Log -->
     <TextView
         android:id="@+id/txtLog"
         android:layout_width="0dp"
-        android:layout_height="150dp"
-        android:padding="12dp"
+        android:layout_height="0dp"
+        android:padding="8dp"
         android:background="#EEEEEE"
         android:textColor="#000000"
-        android:textSize="16sp"
+        android:textSize="14sp"
         android:text="@string/log_partita"
         android:gravity="top"
         android:scrollbars="vertical"
         app:layout_constraintTop_toBottomOf="@id/txtPlayerSequence"
+        app:layout_constraintBottom_toTopOf="@+id/controlsGrid"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintHeight_percent="0.25"/>
 
-    <!-- pulsanti -->
+    <!-- Pulsanti di controllo -->
     <GridLayout
         android:id="@+id/controlsGrid"
         android:layout_width="0dp"
@@ -107,10 +105,11 @@
         android:rowCount="2"
         android:alignmentMode="alignMargins"
         android:useDefaultMargins="true"
-        android:padding="12dp"
+        android:padding="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="8dp">
 
         <Button
             android:id="@+id/btnStart"
